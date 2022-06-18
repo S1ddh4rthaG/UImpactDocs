@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>ReadmeTKG</title>
+    <title>COBREX</title>
     <!-- Meta -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -38,8 +38,7 @@
             <h1 class="logo">
               <a href="index.html">
                 <!--                             <span aria-hidden="true" class="icon_documents_alt icon"></span> -->
-                <span class="text-highlight">
-                  R<span class="text-small">eadme</span>TKG </span
+                <span class="text-highlight"> COBREX </span
                 ><span class="text-bold">Docs</span>
               </a>
             </h1>
@@ -47,11 +46,11 @@
 
           <!-- <div class="top-search-box">
 	                 <form class="form-inline search-form justify-content-center" action="" method="get">
-	            
+
 			            <input type="text" placeholder="Search..." name="search" class="form-control search-input">
-			            
+
 			            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
-			            
+
 			        </form>
                 </div> -->
         </div>
@@ -70,28 +69,26 @@
                 <section id="download-section" class="doc-section">
                   '
                   <h1 class="section-title">
-                    ReadmeTKG - A Tool Towards Generating Temporal Knowledge
-                    Graph For Readme Files
+                    COBREX - A Tool for Extracting Business Rules from COBOL
                   </h1>
                   <br />
                   <h3 class="block-title">Tool Description</h3>
                   <div class="section-block">
                     <p>
-                      ReadmeTKG is used to construct Temporal Knowledge Graph
-                      for the Readme file of a GitHub repository. Readme files
-                      of the projects serves as an important source of
-                      information corresponding to the project such as the
-                      dependencies involved, methodology followed and so on.
-                      Assessing changes in readme files could provide insights
-                      on evolution of the project and consequently could help in
-                      modifying the underlying environment or dependencies to
-                      work with the project. Linking the readme files with time
-                      stamp of changes made to the readme files and further
-                      querying the linked data could help in assessing changes
-                      in readme files. Generating a temporal knowledge graph
-                      specific to readme files could thus link the readme with
-                      temporal changes and consequently ease the querying of
-                      readme.
+                      COBREX is a tool to extract business rules from a COBOL
+                      program. The business logic incorporated in the source
+                      code is known as business rules. Understanding these
+                      business rules can aid with source code comprehension. An
+                      essential stage in legacy system migration is extracting
+                      business rules from existing COBOL systems. To this end,
+                      we developed COBREX, an open-source tool for building the
+                      CFG of an input COBOL program and extracting the embedded
+                      business rules. COBOL developers can use COBREX to extract
+                      business rules of a COBOL program and can analyze the
+                      extracted business rules to comprehend the COBOL program.
+                      These extracted business rules can also aid COBOL
+                      developers in bug location and resolution in turn helping
+                      them in maintenance of COBOL legacy systems.
                     </p>
                     <!-- <a href="https://github.com/rishitha957/ADepD/archive/main.zip" class="btn btn-green" target="_blank"><i class="fas fa-download"></i> Download Tool Zip</a> -->
                   </div>
@@ -103,9 +100,9 @@
                     <h3 class="block-title">
                       Source code is available at
                       <a
-                        href="https://github.com/rishalab/github-kg"
+                        href="https://github.com/mir-sam-ali/COBREX-CLI"
                         target="_blank"
-                        >rishalab/github-kg</a
+                        >mir-sam-ali/COBREX-CLI</a
                       >
                     </h3>
                     <div class="code-block">
@@ -123,28 +120,37 @@
                       <p>
                         <code
                           >git clone
-                          https://github.com/rishalab/github-kg.git</code
+                          https://github.com/mir-sam-ali/COBREX-CLI.git</code
                         >
                       </p>
 
                       <p>Get into the main directory:</p>
-                      <p><code>cd github-kg</code></p>
-
-                      <p>
-                        Download standard-core-nlp-4.3.0 from this
-                        <a
-                          href="https://drive.google.com/drive/u/0/folders/1PAfDRv2lMBX3x9Y4YZtO1kcqJzAPTh7t"
-                          target="_blank"
-                          >Drive Link </a
-                        >. Place this folder in the root directory of this tool.
-                      </p>
+                      <p><code>cd COBREX-CLI</code></p>
 
                       <p>Install the requirements:</p>
                       <p><code>pip install -r requirements.txt</code></p>
 
-                      <p>Generate Knowledge Graph:</p>
                       <p>
-                        <code>python(3) main.py "&ltusername/reponame&gt"</code>
+                        Install
+                        <a
+                          href="https://gnucobol.sourceforge.io"
+                          target="_blank"
+                          >GnuCOBOL </a
+                        >.
+                      </p>
+
+                      <p>
+                        Install
+                        <a href="https://graphviz.org/download/" target="_blank"
+                          >Graphviz </a
+                        >.
+                      </p>
+
+                      <p>Run COBREX:</p>
+                      <p>
+                        <code
+                          >python(3) extractor.py input_cobol_file_path</code
+                        >
                       </p>
                     </div>
                     <!--//code-block-->
@@ -158,81 +164,141 @@
                   <h2 class="section-title">Approach diagram</h2>
                   <div class="section-block">
                     <p>
-                      ReadmeTKG constructs a Temporal Knowledge Graph on Readme
-                      File of a GitHub repository. It first constructs a
-                      Knowledge Graph on the present Readme file of the given
-                      repository. Then, individual Knowledge Graphs are
-                      constructed on changes made by each commit. These
-                      individual Knowledge Graphs are combined to obtain the
-                      commit based Knowledge Graph.
+                      COBREX has been developed using Python using the following
+                      approach:
                     </p>
                   </div>
                   <!--//section-block-->
                   <div class="section-block">
                     <img
                       class="img-fluid"
-                      src="assets/images/demo/TemporalKG.png"
+                      src="assets/images/demo/COBREX-approach.png"
                       alt="elegant icons"
                     />
                   </div>
                   <div class="section-block">
                     <p>
-                      To construct a Temporal Knowledge Graph Tuple, the tuples
-                      present in Readme KG are mapped to equivalent tuple
-                      present in Commits KG. Using this mapping, the
-                      corresponding commit timestamp and commit SHA are
-                      extracted and embedded into the Readme KG tuple to
-                      construct the resultant Temporal KG tuple.
+                      COBREX can be divided into three main phases as
+                      illustrated in the above figure.
+                    </p>
+                  </div>
+
+                  <div class="section-block">
+                    <h3>1. Abstract Syntax Tree (AST) Generation</h3>
+                    <p>
+                      In the first phase, ANTLR4 is used to create a COBOL
+                      parser using the COBOL85 grammar. The input COBOL program
+                      is preprocessed using the GnuCOBOL pre-processor. Then,
+                      the pre-processed file is processed by the parser to
+                      produce the AST.
                     </p>
                   </div>
                   <div class="section-block">
+                    <h3>
+                      2. Control Flow Graph (CFG) Generation & Business
+                      Variables Identification
+                    </h3>
+                    <p>
+                      In the next phase, we override the AST node visitor
+                      methods present in the visitor class created by ANTLR4. We
+                      utilise these AST node visitor methods to perform COBOL
+                      data division analysis, identify business variables and
+                      construct the Control Flow Graph(CFG). We also identify
+                      the context statements for each COBOL statement present in
+                      the input COBOL program.
+                    </p>
+                  </div>
+                  <div class="section-block">
+                    <h3>3. Business Rules Extraction</h3>
+                    <p>
+                      In this phase, we extract the business rules of the input
+                      business variables using the constructed CFG. All
+                      statements and their corresponding context statements of a
+                      business variable are added to a Rules set. Depth First
+                      Search (DFS) is performed on the CFG to identify and add
+                      the control flow between the statements present in the
+                      Rules set.
+                    </p>
+                  </div>
+                  <!-- <div class="section-block">
                     <img
                       class="img-fluid"
                       src="assets/images/demo/TemporalKGExample.png"
                       alt="elegant icons"
                     />
-                  </div>
+                  </div> -->
                   <!--//section-block-->
                 </section>
 
                 <section id="uses-section" class="doc-section">
-                  <h2 class="section-title">UseCase</h2>
+                  <h2 class="section-title">A Running Example</h2>
 
+                  <div class="section-block">
+                    To better understand the usage of COBREX, we present a
+                    running example on a COBOL source file called
+                    <a
+                      target="_blank"
+                      href="https://github.com/cchipman21804/EnterpriseCOBOLv6.3/blob/master/cbl/FUELSAVE.cbl"
+                      >FUELSAVE.cbl</a
+                    >. This file belongs to the
+                    <a
+                      target="_blank"
+                      href="https://github.com/cchipman21804/EnterpriseCOBOLv6.3"
+                      >cchipman21804/EnterpriseCOBOLv6.3</a
+                    >
+
+                    GitHub repository. The COBOL program computes the percentage
+                    of fuel savings based on a combustion efficiency upgrade.
+                  </div>
+                  <h4>1. A portion of generated Control Flow Graph (CFG)</h4>
                   <div class="section-block">
                     <img
                       class="img-fluid"
-                      src="assets/images/demo/Case1TKG.png"
+                      src="assets/images/demo/partFUELSAVECFG.png"
+                      alt="elegant icons"
+                    />
+                  </div>
+                  <h4>
+                    2. Business rules for the variables new-eff-in, pcteff,
+                    old-eff-in, neweff and oldeff present in FUELSAVE.cbl
+                  </h4>
+                  <div class="section-block">
+                    <img
+                      class="img-fluid"
+                      src="assets/images/demo/FUELSAVE_BRs.png"
                       alt="elegant icons"
                     />
                   </div>
                   <div class="section-block">
-                    Here, we present an example usecase scenario to use
-                    ReadmeTKG. The inputs for the tool are the repository of the
-                    readme for which we wish to generate temporal knowledge
-                    graph and the query of interest. In this use case, we
-                    consider the Microsoft/PowerToys repository. Based on the
-                    readme, we wish to obtain information about the timestamp
-                    from when the PowerToys has started allowing various
-                    commands, as highlighted in above Figure A. The query for
-                    the corresponding requirement is as follows: 'select
-                    timestamp where entity1 = "PowerToys" and relation =
-                    "allows" and entity2 = " various commands in PowerToys Run"
-                    '. With this input, the tool generates a Readme-specific
-                    knowledge graph and commit-specific knowledge graph as
-                    intermediate outputs, which are further processed to
-                    generate temporal knowledge graph for the readme file. A
-                    visual representation of the knowledge graph generated for
-                    the query of interest is depicted in the Figure B. The
-                    parameters 'entity1', 'relation' and 'entity2' are matched
-                    to the tuple, and the corresponding timestamp '2021-09-21
-                    17:07:55' is extracted from the temporal knowledge graph.
-                    Thus, the query on temporal knowledge graph results in the
-                    timestamp - '2021-09-21 17:07:55'.
+                    <p>
+                      The business rules in the above figure show that
+                      <i>new-eff-in</i> and <i>old-eff-in</i> are taken as input
+                      from the user using the accept statement. They are then
+                      processed to produce <i>new-eff</i> and <i>old-eff</i>,
+                      respectively. A series of checks are performed on both
+                      <i>new-eff</i> and <i>old-eff</i> variables. The
+                      <i>numerator</i> is then calculated by subtracting
+                      <i>old-eff</i> from <i>new-eff</i>. The
+                      <i>numerator</i> is divided by <i>new-eff</i> to calculate
+                      <i>pcteff</i>. Then, <i>pcteff</i> is multiplied by 100
+                      and moved to <i>pct-eff-out</i>, which represents the
+                      percentage of fuel savings. By analyzing the extracted
+                      business rules, we can comprehend the business result the
+                      COBOL code in <i>FUELSAVE.cbl</i> is calculating. We can
+                      also use the business rules to identify the statements
+                      that are potentially causing a bug. For example, assume
+                      that the statement "divide numerator by new-eff giving
+                      pcteff rounded" causes a divide-by-zero exception during
+                      <i>FUELSAVE.cbl</i> execution. In this situation, we can
+                      examine the business rule of the <i>new-eff</i> variable
+                      to determine the possible cause of the exception and the
+                      COBOL statements that caused it.
+                    </p>
                   </div>
                 </section>
                 <!--//doc-section-->
 
-                <section id="result-section" class="doc-section">
+                <!-- <section id="result-section" class="doc-section">
                   <h2 class="section-title">Results</h2>
                   <div class="section-block">
                     We have evaluated run the KG generator on 10 repositories.
@@ -245,10 +311,10 @@
                       ></strong
                     >
                   </div>
-                </section>
+                </section> -->
                 <!--//doc-section-->
 
-                <section id="video-section" class="doc-section">
+                <!-- <section id="video-section" class="doc-section">
                   <h2 class="section-title">Demo Video</h2>
                   <div class="section-block">
                     <div class="row">
@@ -265,10 +331,8 @@
                         </div>
                       </div>
                     </div>
-                    <!--//row-->
                   </div>
-                  <!--//section-block-->
-                </section>
+                </section> -->
                 <!--//doc-section-->
               </div>
               <!--//content-inner-->
@@ -288,13 +352,15 @@
                   <a class="nav-link scrollto" href="#icons-section"
                     >Approach</a
                   >
-                  <a class="nav-link scrollto" href="#uses-section">UseCase</a>
-                  <a class="nav-link scrollto" href="#metric-section"
+                  <a class="nav-link scrollto" href="#uses-section"
+                    >Running Example</a
+                  >
+                  <!-- <a class="nav-link scrollto" href="#metric-section"
                     >Metrics</a
                   >
                   <a class="nav-link scrollto" href="#result-section"
                     >Results</a
-                  >
+                  > -->
                   <!-- <nav class="doc-sub-menu nav flex-column">
                                         <a class="nav-link scrollto" href="#html">Parsing class</a>
                                     </nav>//nav -->
@@ -322,10 +388,7 @@
               <div class="content-holder-inner">
                 <div class="desc">
                   <h3 class="promo-title">Contributors</h3>
-                  <p>
-                    Akhila Sri Manasa Venigalla - Mir Sameed Ali - Nikhil M -
-                    Sridhar Chimalakonda
-                  </p>
+                  <p>Mir Sameed Ali - Nikhil M - Sridhar Chimalakonda</p>
                   <a class="btn btn-cta" href="" target="_blank"
                     ><i class="fas fa-external-link-alt"></i> Preprint</a
                   >
