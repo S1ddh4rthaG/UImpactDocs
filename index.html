@@ -1,429 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>COBREX</title>
-    <!-- Meta -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <link rel="shortcut icon" href="favicon.ico" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <!-- FontAwesome JS -->
-    <script defer src="assets/fontawesome/js/all.js"></script>
-    <!-- Global CSS -->
-    <link
-      rel="stylesheet"
-      href="assets/plugins/bootstrap/css/bootstrap.min.css"
-    />
-    <!-- Plugins CSS -->
-    <link rel="stylesheet" href="assets/plugins/prism/prism.css" />
-    <link rel="stylesheet" href="assets/plugins/elegant_font/css/style.css" />
 
-    <!-- Theme CSS -->
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css" />
-  </head>
+<head>
+  <title>UImpact</title>
+  <!-- Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+    rel="stylesheet" type="text/css" />
+  <!-- FontAwesome JS -->
+  <script defer src="assets/fontawesome/js/all.js"></script>
+  <!-- Global CSS -->
+  <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css" />
+  <!-- Plugins CSS -->
+  <link rel="stylesheet" href="assets/plugins/prism/prism.css" />
+  <link rel="stylesheet" href="assets/plugins/elegant_font/css/style.css" />
 
-  <body class="body-green">
-    <div class="page-wrapper">
-      <!-- ******Header****** -->
-      <header id="header" class="header">
-        <div class="container">
-          <div class="branding">
-            <h1 class="logo">
-              <a href="index.html">
-                <!--                             <span aria-hidden="true" class="icon_documents_alt icon"></span> -->
-                <span class="text-highlight"> COBREX </span
-                ><span class="text-bold">Docs</span>
-              </a>
-            </h1>
-          </div>
+  <!-- Theme CSS -->
+  <link id="theme-style" rel="stylesheet" href="assets/css/styles.css" />
+</head>
 
-          <!-- <div class="top-search-box">
-	                 <form class="form-inline search-form justify-content-center" action="" method="get">
-
-			            <input type="text" placeholder="Search..." name="search" class="form-control search-input">
-
-			            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
-
-			        </form>
-                </div> -->
+<body class="body-green">
+  <div class="page-wrapper">
+    <!-- ******Header****** -->
+    <header id="header" class="header">
+      <div class="container">
+        <div class="branding">
+          <h1 class="logo">
+            <a href="index.html">
+              <span class="text-highlight">UImpact</span>
+            </a>
+          </h1>
         </div>
-        <!--//container-->
-      </header>
-      <!--//header-->
-      <div class="doc-wrapper">
-        <div class="container">
-          <!-- <div id="doc-header" class="doc-header text-center">
-                    <h1 class="doc-title"><i class="icon fa fa-paper-plane"></i> Quick Start</h1>
-                    <div class="meta"><i class="far fa-clock"></i> Last updated: Nov 21st, 2020</div>
-                </div>//doc-header -->
-          <div class="doc-body row">
-            <div class="doc-content col-md-9 col-12 order-1">
-              <div class="content-inner">
-                <section id="download-section" class="doc-section">
-                  '
-                  <h1 class="section-title">
-                    COBREX - A Tool for Extracting Business Rules from COBOL
-                  </h1>
-                  <br />
-                  <h3 class="block-title">Tool Description</h3>
-                  <div class="section-block">
-                    <p>
-                      COBREX is a tool to extract business rules from a COBOL
-                      program. The business logic incorporated in the source
-                      code is known as business rules. Understanding these
-                      business rules can aid with source code comprehension. An
-                      essential stage in legacy system migration is extracting
-                      business rules from existing COBOL systems. To this end,
-                      we developed COBREX, an open-source tool for building the
-                      CFG of an input COBOL program and extracting the embedded
-                      business rules. COBOL developers can use COBREX to extract
-                      business rules of a COBOL program and can analyze the
-                      extracted business rules to comprehend the COBOL program.
-                      These extracted business rules can also aid COBOL
-                      developers in bug location and resolution in turn helping
-                      them in maintenance of COBOL legacy systems.
-                    </p>
-                    <!-- <a href="https://github.com/rishitha957/ADepD/archive/main.zip" class="btn btn-green" target="_blank"><i class="fas fa-download"></i> Download Tool Zip</a> -->
-                  </div>
-                </section>
-                <!--//doc-section-->
-                <section id="installation-section" class="doc-section">
-                  <h2 class="section-title">Installation</h2>
-                  <div id="step1" class="section-block">
-<!--                     <h3 class="block-title">
-                      Source code is available at
-                      <a
-                        href="https://github.com/rishalab/COBREX-CLI"
-                        target="_blank"
-                        >rishalab/COBREX-CLI</a
-                      >
-                    </h3> -->
-                    <div class="code-block">
-                      <p>
-                        Create and activate a new python3 virtual environment:
-                      </p>
-                      <p>
-                        <code
-                          >python(3) -m venv
-                          &ltpath_to_env/env_name&gt&lt/path_to_env&gt</code
-                        >
-                      </p>
-
-                      <p>Clone or download this github repository:</p>
-                      <p>
-                        <code
-                          >git clone
-                          https://github.com/rishalab/COBREX-CLI.git</code
-                        >
-                      </p>
-
-                      <p>Get into the main directory:</p>
-                      <p><code>cd COBREX-CLI</code></p>
-
-                      <p>Install the requirements:</p>
-                      <p><code>pip install -r requirements.txt</code></p>
-
-                      <p>
-                        Install
-                        <a
-                          href="https://gnucobol.sourceforge.io"
-                          target="_blank"
-                          >GnuCOBOL </a
-                        >.
-                      </p>
-
-                      <p>
-                        Install
-                        <a href="https://graphviz.org/download/" target="_blank"
-                          >Graphviz </a
-                        >.
-                      </p>
-
-                      <p>Run COBREX:</p>
-                      <p>
-                        <code
-                          >python(3) extractor.py input_cobol_file_path</code
-                        >
-                      </p>
-                    </div>
-                    <!--//code-block-->
-                  </div>
-                  <!--//section-block-->
-                </section>
-                <!--//doc-section-->
-
-                <!--//doc-section-->
-                <section id="icons-section" class="doc-section">
-                  <h2 class="section-title">Approach diagram</h2>
-                  <div class="section-block">
-                    <p>
-                      COBREX has been developed using Python using the following
-                      approach:
-                    </p>
-                  </div>
-                  <!--//section-block-->
-                  <div class="section-block">
-                    <img
-                      class="img-fluid"
-                      src="assets/images/demo/COBREX-approach.png"
-                      alt="elegant icons"
-                    />
-                  </div>
-                  <div class="section-block">
-                    <p>
-                      COBREX can be divided into three main phases as
-                      illustrated in the above figure.
-                    </p>
-                  </div>
-
-                  <div class="section-block">
-                    <h3>1. Abstract Syntax Tree (AST) Generation</h3>
-                    <p>
-                      In the first phase, ANTLR4 is used to create a COBOL
-                      parser using the COBOL85 grammar. The input COBOL program
-                      is preprocessed using the GnuCOBOL pre-processor. Then,
-                      the pre-processed file is processed by the parser to
-                      produce the AST.
-                    </p>
-                  </div>
-                  <div class="section-block">
-                    <h3>
-                      2. Control Flow Graph (CFG) Generation & Business
-                      Variables Identification
-                    </h3>
-                    <p>
-                      In the next phase, we override the AST node visitor
-                      methods present in the visitor class created by ANTLR4. We
-                      utilise these AST node visitor methods to perform COBOL
-                      data division analysis, identify business variables and
-                      construct the Control Flow Graph(CFG). We also identify
-                      the context statements for each COBOL statement present in
-                      the input COBOL program.
-                    </p>
-                  </div>
-                  <div class="section-block">
-                    <h3>3. Business Rules Extraction</h3>
-                    <p>
-                      In this phase, we extract the business rules of the input
-                      business variables using the constructed CFG. All
-                      statements and their corresponding context statements of a
-                      business variable are added to a Rules set. Depth First
-                      Search (DFS) is performed on the CFG to identify and add
-                      the control flow between the statements present in the
-                      Rules set.
-                    </p>
-                  </div>
-                  <!-- <div class="section-block">
-                    <img
-                      class="img-fluid"
-                      src="assets/images/demo/TemporalKGExample.png"
-                      alt="elegant icons"
-                    />
-                  </div> -->
-                  <!--//section-block-->
-                </section>
-
-                <section id="uses-section" class="doc-section">
-                  <h2 class="section-title">A Running Example</h2>
-
-                  <div class="section-block">
-                    To better understand the usage of COBREX, we present a
-                    running example on a COBOL source file called
-                    <a
-                      target="_blank"
-                      href="https://github.com/cchipman21804/EnterpriseCOBOLv6.3/blob/master/cbl/FUELSAVE.cbl"
-                      >FUELSAVE.cbl</a
-                    >. This file belongs to the
-                    <a
-                      target="_blank"
-                      href="https://github.com/cchipman21804/EnterpriseCOBOLv6.3"
-                      >cchipman21804/EnterpriseCOBOLv6.3</a
-                    >
-
-                    GitHub repository. The COBOL program computes the percentage
-                    of fuel savings based on a combustion efficiency upgrade.
-                  </div>
-                  <h4>1. A portion of generated Control Flow Graph (CFG)</h4>
-                  <div class="section-block">
-                    <img
-                      class="img-fluid"
-                      src="assets/images/demo/partFUELSAVECFG.png"
-                      alt="elegant icons"
-                    />
-                  </div>
-                  <h4>
-                    2. Business rules for the variables new-eff-in, pcteff,
-                    old-eff-in, neweff and oldeff present in FUELSAVE.cbl
-                  </h4>
-                  <div class="section-block">
-                    <img
-                      class="img-fluid"
-                      src="assets/images/demo/FUELSAVE_BRs.png"
-                      alt="elegant icons"
-                    />
-                  </div>
-                  <div class="section-block">
-                    <p>
-                      The business rules in the above figure show that
-                      <i>new-eff-in</i> and <i>old-eff-in</i> are taken as input
-                      from the user using the accept statement. They are then
-                      processed to produce <i>new-eff</i> and <i>old-eff</i>,
-                      respectively. A series of checks are performed on both
-                      <i>new-eff</i> and <i>old-eff</i> variables. The
-                      <i>numerator</i> is then calculated by subtracting
-                      <i>old-eff</i> from <i>new-eff</i>. The
-                      <i>numerator</i> is divided by <i>new-eff</i> to calculate
-                      <i>pcteff</i>. Then, <i>pcteff</i> is multiplied by 100
-                      and moved to <i>pct-eff-out</i>, which represents the
-                      percentage of fuel savings. By analyzing the extracted
-                      business rules, we can comprehend the business result the
-                      COBOL code in <i>FUELSAVE.cbl</i> is calculating. We can
-                      also use the business rules to identify the statements
-                      that are potentially causing a bug. For example, assume
-                      that the statement "divide numerator by new-eff giving
-                      pcteff rounded" causes a divide-by-zero exception during
-                      <i>FUELSAVE.cbl</i> execution. In this situation, we can
-                      examine the business rule of the <i>new-eff</i> variable
-                      to determine the possible cause of the exception and the
-                      COBOL statements that caused it.
-                    </p>
-                  </div>
-                </section>
-                <!--//doc-section-->
-
-                <!-- <section id="result-section" class="doc-section">
-                  <h2 class="section-title">Results</h2>
-                  <div class="section-block">
-                    We have evaluated run the KG generator on 10 repositories.
-                    For each repository, we have generate KG of final Readme and
-                    KG for commits history.
-                    <strong
-                      ><a
-                        href="https://docs.google.com/spreadsheets/d/1W8J1GFwIqktN4ymqIc3NrQXWhhatRPI3_ma6rCZEuJM/edit?usp=sharing"
-                        >Results</a
-                      ></strong
-                    >
-                  </div>
-                </section> -->
-                <!--//doc-section-->
-
-                <!-- <section id="video-section" class="doc-section">
-                  <h2 class="section-title">Demo Video</h2>
-                  <div class="section-block">
-                    <div class="row">
-                      <div class="col-md-6 col-12">
-                        <div class="embed-responsive embed-responsive-4by3">
-                          <iframe
-                            width="560"
-                            height="315"
-                            src="https://www.youtube.com/embed/PzEaie3qnpo"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen
-                          ></iframe>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </section> -->
-                <!--//doc-section-->
-              </div>
-              <!--//content-inner-->
-            </div>
-            <!--//doc-content-->
-            <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
-              <div id="doc-nav" class="doc-nav">
-                <nav id="doc-menu" class="nav doc-menu flex-column sticky">
-                  <!-- <a class="nav-link scrollto" href="#download-section">Download</a> -->
-                  <a class="nav-link scrollto" href="#installation-section"
-                    >Installation</a
-                  >
-                  <nav class="doc-sub-menu nav flex-column">
-                    <a class="nav-link scrollto" href="#step1">From Github</a>
-                  </nav>
-                  <!--//nav-->
-                  <a class="nav-link scrollto" href="#icons-section"
-                    >Approach</a
-                  >
-                  <a class="nav-link scrollto" href="#uses-section"
-                    >Running Example</a
-                  >
-                  <!-- <a class="nav-link scrollto" href="#metric-section"
-                    >Metrics</a
-                  >
-                  <a class="nav-link scrollto" href="#result-section"
-                    >Results</a
-                  > -->
-                  <!-- <nav class="doc-sub-menu nav flex-column">
-                                        <a class="nav-link scrollto" href="#html">Parsing class</a>
-                                    </nav>//nav -->
-                  <!-- <a class="nav-link scrollto" href="#tables-section">Results</a> -->
-                  <a class="nav-link scrollto" href="#video-section"
-                    >Demo Video</a
-                  >
-                </nav>
-                <!--//doc-menu-->
-              </div>
-            </div>
-            <!--//doc-sidebar-->
-          </div>
-          <!--//doc-body-->
-        </div>
-        <!--//container-->
       </div>
-      <!--//doc-wrapper-->
-
-      <div id="promo-block" class="promo-block">
-        <div class="container">
-          <div class="promo-block-inner">
-            <!-- <h3 class="promo-title">Contributors</h3> -->
-            <div class="content-holder col-lg-7 col-md-6 col-7">
-              <div class="content-holder-inner">
-                <div class="desc">
-                  <h3 class="promo-title">Contributors</h3>
-                  <p>Mir Sameed Ali - Nikhil M - Sridhar Chimalakonda</p>
-                  <a class="btn btn-cta" href="" target="_blank"
-                    ><i class="fas fa-external-link-alt"></i> Preprint</a
-                  >
+      <!--//container-->
+    </header>
+    <!--//header-->
+    <div class="doc-wrapper">
+      <div class="container">
+        <div class="doc-body row">
+          <div class="doc-content col-md-9 col-12 order-1">
+            <div class="content-inner">
+              <section id="download-section" class="doc-section">
+                '
+                <h1 class="section-title">
+                  UImpact - A Tool for detecting UI Energy smells in REACT
+                </h1>
+                <br />
+                <h3 class="block-title">Tool Description</h3>
+                <div class="section-block">
+                  <p>
+                    UImpact is a tool for detecting UI Energy smells in REACT. Developed using node.js and python,
+                    UImpact is a command line tool that takes the source of a REACT application as input and generates a
+                    report of the smells present in the application.
+                  </p>
+                  <p>
+                    Currently, UImpact detects the following UI Energy smells:
+                  </p>
+                  <ul>
+                    <li>Lazy Loading Smell</li>
+                    <li>Anonymous Event Handler Smell</li>
+                    <li>Async Load Script Smell</li>
+                    <li>Client Side Logging Smell</li>
+                    <li>Inline Style Smell</li>
+                    <li>Unoptimized Images</li>
+                    <li>Web Unsafe fonts</li>
+                  </ul>
+                  <p>
+                    For the above smells, UImpact provides the following information in the report:
+                  </p>
+                  <ul>
+                    <li>Analysis Report - A report of the smells detected, location of the smells and color coded
+                      severity of the smells.</li>
+                    <li>Category Graph - A graph of the smells detected, categorized by the type of smell.</li>
+                    <li>Download Links - Links to download the JSON file of the smells and AST generated.</li>
+                  </ul>
                 </div>
-                <!--//desc-->
-              </div>
-              <!--//content-holder-inner-->
+              </section>
+              <!--//doc-section-->
+              <section id="installation-section" class="doc-section">
+                <h2 class="section-title">Installation</h2>
+                <div id="step1" class="section-block">
+                  <div class="code-block">
+                    <p>
+                      <b>Step 1:</b> Clone or download this github repository:
+                    </p>
+                    <p>
+                      <code>git clone https://github.com/UI-Energy-Smells/smells_core </code>
+                    </p>
+
+                    <p>
+                      <b>Step 2:</b> Get into the main directory:
+                    </p>
+                    <p><code>cd smells_core</code></p>
+
+                    <p>
+                      <b>Step 3:</b> Install the requirements:
+                    </p>
+                    <p>
+                      For installing the tool:
+                    </p>
+                    <p><code>npm install</code></p>
+                    <p>
+                      For installing mkdocs-material which is used for generating the report:
+                    </p>
+                    <p><code>pip install --upgrade pip</code></p>
+                    <p><code>pip install mkdocs</code></p>
+                    <p><code>pip install mkdocs-material</code></p>
+                    <p><code>pip install pymdown-extensions</code></p>
+                  </div>
+                  <!--//code-block-->
+                </div>
+                <h2 class="section-title">Usage</h2>
+                <div class="section-block">
+                  <div class="code-block">
+                    <p>
+                      <b>Step 1:</b> Make sure the terminal is the src directory of the smells_core folder.
+                    </p>
+                    <p>
+                      <b>Step 2:</b> Copy the source code of the REACT application to be analyzed into the test folder
+                      in the
+                      src directory.
+                    </p>
+                    <p>
+                      <b>Step 3: For Windows</b>
+                      Make sure powershell is installed.
+                      Run the following command:
+                      <code>.\run.ps1</code>
+                    </p>
+                    <p>
+                      <b>Step 3: For Linux</b>
+                      Run the following command:
+                      <code>bash run.bash</code>
+                    </p>
+                    <p>
+                      <b>Step 4:</b> The report will be generated & served. The link will be present in the
+                      terminal.Click on the link to open it
+                    </p>
+                  </div>
+                </div>
+                <!--//section-block-->
+              </section>
+              <!--//doc-section-->
+
+              <!--//doc-section-->
+              <section id="icons-section" class="doc-section">
+                <h2 class="section-title">Architecture Diagram</h2>
+                <!--//section-block-->
+                <div class="section-block">
+                  <img class="img-fluid" src="assets/images/demo/architecture.png" alt="elegant icons" />
+                </div>
+                <div class="section-block">
+                  <p>
+                    UImpact can be divided into 2 main phases as
+                    illustrated in the above figure.
+                  </p>
+                </div>
+
+                <div class="section-block">
+                  <h3>1. Smells Detection</h3>
+                  <p>
+                    In the first phase, for code based analysis Babel is used to generate the AST of the file.
+                    For each smell, a visitor is created and all of them are merged into a checklist. When the AST is
+                    traversed, the checklist is used to detect the smells.
+                    For non code based analysis, the tool analysis the files present in the folder to detect the smells
+                    based on violating extensions.
+                    All the smells from both the analysis of all the files are merged into single JSON file.
+                  </p>
+                </div>
+                <div class="section-block">
+                  <h3>
+                    2. Report Generation
+                  </h3>
+                  <p>
+                    In the next phase, we use a python script to generate the report from the JSON file generated in the
+                    previous phase.
+                    The script creates markdown files containing the analysis report, category graph and links to
+                    download the JSON file and AST.
+                    The markdown files are then used to generate the report using mkdocs-material which is then used to
+                    serve the report.
+                    Energy smells are color-coded based on severity: red for severe, yellow for medium, and light blue
+                    for suggestions.
+                  </p>
+                </div>
+                <!-- Description of smells -->
+
+              </section>
+              <!--//doc-section-->
+
+              <!-- uses section -->
+              <section id="uses-section" class="doc-section">
+                <h2 class="section-title">Running Example</h2>
+                <p>
+                  The tool was run on the following repository:
+                  <a href="https://github.com/codedthemes/berry-free-react-admin-template.git">
+                    codedthemes/berry-free-react-admin-template
+                  </a>
+                  and the report generated was generated.
+                  <!-- here are the three screenshots -->
+                <p>
+                  <b>Analysis Report</b>
+                  <img class="img-fluid" src="assets/images/demo/demo_analysis_report.png" alt="Analysis Report" />
+                </p>
+                <p>
+                  <b>Category Graph</b>
+                  <img class="img-fluid" src="assets/images/demo/demo_category_graph.png" alt="Category Graph" />
+                </p>
+                <p>
+                  <b>Download Links</b>
+                  <img class="img-fluid" src="assets/images/demo/demo_download_links.png" alt="Download Links" />
+                </p>
+                </p>
+              </section>
+
+              <!-- result section -->
+              <section id="result-section" class="doc-section">
+                <h2 class="section-title">Result</h2>
+                <p>
+                  The tool has been tested on 70 repositories and 3169 smells were detected. The distribution of the
+                  smells is as shown in the figure below.
+                  The most common smells were <b>Lazy Loading Smell</b> and <b>Unoptimized Images</b>, least common were
+                  <b>Async Load Script Smell</b> and <b>Web Unsafe fonts</b>
+                </p>
+                <img class="img-fluid" src="assets/images/demo/plot.png" alt="Result" />
+              </section>
+
+              <!-- video section -->
+              <section id="video-section" class="doc-section">
+                <h2 class="section-title">Demonstration Video</h2>
+                <p>
+                  The following video demonstrates the working of the tool.
+                </p>
+
+                <div style="text-align: center;">
+                  <div class="section-block">
+                    <iframe width="600" height="360" src=""
+                      title="React Tutorial for Beginners" frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen></iframe>
+                  </div>
+                </div>
             </div>
-            <!--//content-holder-->
+            <!--//content-inner-->
           </div>
-          <!--//promo-block-inner-->
+          <!--//doc-content-->
+          <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
+            <div id="doc-nav" class="doc-nav">
+              <nav id="doc-menu" class="nav doc-menu flex-column sticky">
+                <!-- <a class="nav-link scrollto" href="#download-section">Download</a> -->
+                <a class="nav-link scrollto" href="#installation-section">Installation</a>
+                <nav class="doc-sub-menu nav flex-column">
+                  <a class="nav-link scrollto" href="#step1">From Github</a>
+                </nav>
+                <a class="nav-link scrollto" href="#icons-section">Approach</a>
+                <a class="nav-link scrollto" href="#uses-section">Running Example</a>
+                <a class="nav-link scrollto" href="#result-section">Results</a>
+                <a class="nav-link scrollto" href="#video-section">Demo Video</a>
+              </nav>
+              <!--//doc-menu-->
+            </div>
+          </div>
+          <!--//doc-sidebar-->
         </div>
-        <!--//container-->
+        <!--//doc-body-->
       </div>
-      <!--//promo-block-->
+      <!--//container-->
     </div>
-    <!--//page-wrapper-->
-    <!-- Main Javascript -->
-    <script
-      type="text/javascript"
-      src="assets/plugins/jquery-3.4.1.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="assets/plugins/bootstrap/js/bootstrap.min.js"
-    ></script>
-    <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>
-    <script
-      type="text/javascript"
-      src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="assets/plugins/stickyfill/dist/stickyfill.min.js"
-    ></script>
-    <script type="text/javascript" src="assets/js/main.js"></script>
-  </body>
+    <!--//doc-wrapper-->
+
+    <div id="promo-block" class="promo-block">
+      <div class="container">
+        <div class="promo-block-inner">
+          <!-- <h3 class="promo-title">Contributors</h3> -->
+          <div class="content-holder col-lg-7 col-md-6 col-7">
+            <div class="content-holder-inner">
+              <div class="desc">
+                <h3 class="promo-title">Contributors</h3>
+                <p>Siddhartha G - Preethi Varsha - Sridhar Chimalakonda</p>
+                <!-- <a class="btn btn-cta" href="" target="_blank"><i class="fas fa-external-link-alt"></i> Preprint</a> -->
+              </div>
+              <!--//desc-->
+            </div>
+            <!--//content-holder-inner-->
+          </div>
+          <!--//content-holder-->
+        </div>
+        <!--//promo-block-inner-->
+      </div>
+      <!--//container-->
+    </div>
+    <!--//promo-block-->
+  </div>
+  <!--//page-wrapper-->
+  <!-- Main Javascript -->
+  <script type="text/javascript" src="assets/plugins/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>
+  <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>
+  <script type="text/javascript" src="assets/plugins/stickyfill/dist/stickyfill.min.js"></script>
+  <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+
 </html>
